@@ -1,3 +1,31 @@
+# 環境構築
+```
+// プロジェクト作成
+npx create-remix@latest
+
+cd your-project-name
+npm install
+
+// Tailwind CSS導入
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+// .envファイルで環境変数を管理
+npm install dotenv
+
+touch .env
+DATABASE_URL=postgresql://username:password@localhost:5432/database_name
+
+// prismaでデータベーススキーマを管理
+npm install prisma @prisma/client
+npx prisma init
+
+// ユーザ認証
+npm install remix-auth
+```
+  
+
+
 # Welcome to Remix!
 
 - 📖 [Remix docs](https://remix.run/docs)
